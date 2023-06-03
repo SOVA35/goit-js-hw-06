@@ -22,7 +22,7 @@ function handleSubmit(event) {
     
     formData.forEach((value, name) => {
         
-        console.log({"name": name, "value": value })
+        console.log({name, value})
       
         form.reset();
     })
