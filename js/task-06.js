@@ -7,11 +7,11 @@ const totalLength = validationInputEl.getAttribute('data-length')
 validationInputEl.addEventListener('blur', function () {
     const inputValue = validationInputEl.value.length;
      const totalLength = parseInt(this.getAttribute('data-length'));
-    if (inputValue === totalLength) {
-        // validationInputEl.classList.remove('invalid')
-        validationInputEl.classList.add('valid');        
+    if (inputValue === totalLength) {        
+        validationInputEl.classList.add('valid');  
+        validationInputEl.classList.remove('invalid')
     } else {
-        // validationInputEl.classList.add('invalid');
+        validationInputEl.classList.add('invalid');
         validationInputEl.classList.remove('valid');
-            }
+        }
    }) 
